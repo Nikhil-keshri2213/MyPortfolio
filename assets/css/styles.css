@@ -4,7 +4,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --hue: 165;
+  --hue: 15;
   --first-color: hsl(var(--hue), 60%, 40%);
   --title-color: hsl(var(--hue), 4%, 12%);
   --text-color: hsl(var(--hue), 4%, 20%);
@@ -588,7 +588,7 @@ textarea {
   top: 0.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: auto;
   height: 2px;
   background-color: var(--border-color);
 }
@@ -649,6 +649,8 @@ textarea {
   display: block;
   background-color: var(--border-color);
   position: relative;
+  width: 0;
+  animation: moveProgress 2s forwards ease-in-out
 }
 .skills-percentage::before{
   content: '';
@@ -661,6 +663,15 @@ textarea {
   background-color: var(--first-color);
   border: 2px solid var(--border-color);
   box-shadow: 2px 2px var(--shadow-color);
+}
+
+@keyframes moveProgress {
+  from{
+    width: 0;
+  }
+  to{
+    width: var(--w);
+  }
 }
 /*=============== WORK ===============*/
 .work-list{

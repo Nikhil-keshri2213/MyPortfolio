@@ -208,7 +208,7 @@
         <div class="skills-item">
           <div class="skills-header">
             <h3 class="skills-name">Java & SpringBoot</h3>
-            <span class="skills-value">85 <b>%</b></span>
+            <span class="skills-value">75 <b>%</b></span>
           </div>
           <p class="skills-description">
             Java is a versatile, object-oriented programming language, while
@@ -217,27 +217,26 @@
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 85%"></span>
+            <span class="skills-percentage" style="--w: 75%"></span>
           </div>
         </div>
 
         <div class="skills-item">
           <div class="skills-header">
             <h3 class="skills-name">Python</h3>
-            <span class="skills-value">75 <b>%</b></span>
+            <span class="skills-value">50 <b>%</b></span>
           </div>
           <p class="skills-description">
             Python is a high-level programming language known for its
-            simplicity, versatility, and widespread use in data science, web
-            development, and automation.
+            simplicity, versatility, and widespread use in data science, ML, and automation.
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 75%"></span>
+            <span class="skills-percentage" style="--w: 50%"></span>
           </div>
         </div>
 
-        <div class="skills-item">
+        <!-- <div class="skills-item">
           <div class="skills-header">
             <h3 class="skills-name">R Language</h3>
             <span class="skills-value">60 <b>%</b></span>
@@ -249,14 +248,14 @@
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 60%"></span>
+            <span class="skills-percentage" style="--w: 60%"></span>
           </div>
-        </div>
+        </div> -->
 
         <div class="skills-item">
           <div class="skills-header">
             <h3 class="skills-name">JavaScript</h3>
-            <span class="skills-value">50 <b>%</b></span>
+            <span class="skills-value">40 <b>%</b></span>
           </div>
           <p class="skills-description">
             JavaScript is a dynamic language essential for building
@@ -265,7 +264,7 @@
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 50%"></span>
+            <span class="skills-percentage" style="--w: 40%"></span>
           </div>
         </div>
 
@@ -281,13 +280,13 @@
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 88%"></span>
+            <span class="skills-percentage" style="--w: 88%"></span>
           </div>
         </div>
 
         <div class="skills-item">
           <div class="skills-header">
-            <h3 class="skills-name">SQL & DB</h3>
+            <h3 class="skills-name">DataBase</h3>
             <span class="skills-value">77 <b>%</b></span>
           </div>
           <p class="skills-description">
@@ -296,9 +295,24 @@
           </p>
 
           <div class="skills-bar">
-            <span class="skills-percentage" style="width: 77%"></span>
+            <span class="skills-percentage" style="--w: 77%"></span>
           </div>
         </div>
+
+        <div class="skills-item">
+          <div class="skills-header">
+            <h3 class="skills-name">CI/CD</h3>
+            <span class="skills-value">65 <b>%</b></span>
+          </div>
+          <p class="skills-description">
+            Understanding Process of Planning to Deploying an Application.
+          </p>
+
+          <div class="skills-bar">
+            <span class="skills-percentage" style="--w: 60%"></span>
+          </div>
+        </div>
+
         <div class="section-deco deco-left">
           <img src="assets/img/shape-1.png" alt="" class="shape" />
         </div>
@@ -311,15 +325,44 @@
       <div class="container">
         <ul class="work-list">
           <li class="work-item active-work" data-filter="all">All</li>
-          <li class="work-item" data-filter=".dev">Developments</li>
+          <li class="work-item" data-filter=".dev">Java Devlopment</li>
+          <li class="work-item" data-filter=".rect">React Application</li>
           <li class="work-item" data-filter=".ds">
             Data Science & Machine Learning
           </li>
-          <li class="work-item" data-filter=".ad">Android Development</li>
+          <!-- <li class="work-item" data-filter=".ad">Android Development</li> -->
         </ul>
 
         <div class="work-container grid">
-          <div class="mix dev">
+
+          <div class="mix ds rect">
+            <div class="card">
+              <img src="assets/img/projects/lumen.png" alt="" class="work-img" />
+
+              <h4 class="work-category">Machine Learning</h4>
+              <h3 class="work-title">Lumen Ai</h3>
+              <p class="work-description">
+                A deep learning-based system to detect image tampering using 
+                Convolutional Neural Networks (CNN) and Error Level Analysis (ELA).
+              </p>
+              <a href="https://lumen-ai-com.vercel.app/" class="link" target="_blank">See <i class="ri-arrow-right-line link-icon"></i></a>
+            </div>
+          </div>
+
+          <div class="mix rect">
+            <div class="card">
+              <img src="assets/img/projects/spectra.png" alt="" class="work-img" />
+              <h4 class="work-category">Frontend Development</h4>
+              <h3 class="work-title">Spectra - Weather App</h3>
+              <p class="work-description">
+                A Modern Interactive Perodic Table To Learn Atomic Level Things with clarity.
+              </p>
+              <a href="https://spectra-periodic-table.vercel.app/" class="link" target="_blank">See <i
+                  class="ri-arrow-right-line link-icon"></i></a>
+            </div>
+          </div>
+
+          <div class="mix rect">
             <div class="card">
               <img src="assets/img/projects/logo-horizon.png" alt="" class="work-img" />
               <h4 class="work-category">Frontend Development</h4>
@@ -329,6 +372,34 @@
                 weather updates.
               </p>
               <a href="https://horizon-weather-app-jet.vercel.app/" class="link" target="_blank">See <i
+                  class="ri-arrow-right-line link-icon"></i></a>
+            </div>
+          </div>
+
+          <div class="mix rect">
+            <div class="card">
+              <img src="assets/img/projects/shopease1.png" alt="" class="work-img" />
+
+              <h4 class="work-category">React Application</h4>
+              <h3 class="work-title">ShopEase - Ui</h3>
+              <p class="work-description">
+                Built Scalable Backend for E-Commerce plateform ShopEase.
+              </p>
+              <a href="https://github.com/Nikhil-keshri2213/ShopEase_Backend" class="link" target="_blank">See <i
+                  class="ri-arrow-right-line link-icon"></i></a>
+            </div>
+          </div>
+
+          <div class="mix dev">
+            <div class="card">
+              <img src="assets/img/projects/shopease2.png" alt="" class="work-img" />
+
+              <h4 class="work-category">Java Backend Development</h4>
+              <h3 class="work-title">ShopEase - Backend</h3>
+              <p class="work-description">
+                Built Scalable Backend for E-Commerce plateform ShopEase.
+              </p>
+              <a href="https://github.com/Nikhil-keshri2213/ShopEase_Backend" class="link" target="_blank">See <i
                   class="ri-arrow-right-line link-icon"></i></a>
             </div>
           </div>
@@ -408,20 +479,7 @@
             </div>
           </div>
 
-          <div class="mix ds">
-            <div class="card">
-              <img src="assets/img/projects/image-forgery.png" alt="" class="work-img" />
-
-              <h4 class="work-category">Machine Learning</h4>
-              <h3 class="work-title">Image Forgery Detection System</h3>
-              <p class="work-description">
-                A deep learning-based system to detect image tampering using 
-                Convolutional Neural Networks (CNN) and Error Level Analysis (ELA).
-              </p>
-              <a href="https://github.com/Nikhil-keshri2213/Image-Forgery-Detection-System" class="link" target="_blank">See <i
-                  class="ri-arrow-right-line link-icon"></i></a>
-            </div>
-          </div>
+          
 
           <div class="mix ds">
             <div class="card">
@@ -485,7 +543,7 @@
             </div>
           </div>
 
-          <div class="mix ad">
+          <!-- <div class="mix ad">
             <div class="card">
               <img src="assets/img/projects/p11_text.jpg" alt="" class="work-img" />
 
@@ -497,7 +555,7 @@
               <a href="https://github.com/Nikhil-keshri2213/Textify_TextScanner_App" class="link" target="_blank">See <i
                   class="ri-arrow-right-line link-icon"></i></a>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="section-deco deco-right">
           <img src="assets/img/shape-1.png" alt="" class="shape" />
@@ -528,7 +586,7 @@
                 </div>
                 <p class="resume-description">
                   Pursing BTech in Computer Science and Engineering with CGPA
-                  - 7.4.
+                  - 7.52.
                 </p>
               </div>
             </div>
@@ -599,7 +657,7 @@
               </div>
             </div>
 
-            <div class="resume-item">
+            <!-- <div class="resume-item">
               <div class="resume-header">
                 <h3 class="resume-header-title">Java Full Stack Developer</h3>
                 <span class="resume-icon">
@@ -615,9 +673,9 @@
                   Develop Manage and Intergate the Features in Java Application and also lead the Team.
                 </p>
               </div>
-            </div>
+            </div> -->
 
-            <div class="resume-item">
+            <!-- <div class="resume-item">
               <div class="resume-header">
                 <h3 class="resume-header-title">Software Developer</h3>
                 <span class="resume-icon">
@@ -633,7 +691,8 @@
                   Created exciting and real world projects to solve the industrial problems.
                 </p>
               </div>
-            </div>
+            </div> -->
+
           </div>
         </div>
         <div class="section-deco deco-left">
@@ -648,6 +707,55 @@
       <div class="container">
         <div class="swiper testimonials-swiper">
           <div class="swiper-wrapper">
+
+            <div class="swiper-slide card">
+              <div class="testimonial-icon">
+                <i class="ri-double-quotes-r"></i>
+              </div>
+
+              <img src="assets/img/certificates/oracle1.png" alt="" class="testimonial-img" />
+              <p class="testimonial-description">
+                AI Foundations certification is designed to introduce learners 
+                to the fundamental concepts of artificial intelligence (AI) and machine learning (ML)
+              </p>
+              <h3 class="testimonial-name">
+                Oracle Cloud Infrastructure 2025 AI Foundations Associate (1Z0-1085-25)
+              </h3>
+              <span class="testimonial-author">Oracle</span>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="testimonial-icon">
+                <i class="ri-double-quotes-r"></i>
+              </div>
+
+              <img src="assets/img/certificates/oracle2.png" alt="" class="testimonial-img" />
+              <p class="testimonial-description">
+                Foundations certification is for individuals who intend to 
+                demonstrate fundamental knowledge of public cloud services provided by Oracle Cloud Infrastructure
+              </p>
+              <h3 class="testimonial-name">
+                Oracle Cloud Infrastructure 2025 Foundations Associate (1Z0-1085-25)
+              </h3>
+              <span class="testimonial-author">Oracle</span>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="testimonial-icon">
+                <i class="ri-double-quotes-r"></i>
+              </div>
+
+              <img src="assets/img/certificates/oracle3.png" alt="" class="testimonial-img" />
+              <p class="testimonial-description">
+               Oracle Cloud Infrastructure (OCI) Developer 2025 Professional 
+               exam is intended for individuals seeking mastery in cloud-native application development
+              </p>
+              <h3 class="testimonial-name">
+                Oracle Cloud Infrastructure 2025 Developer Professional (1Z0-1084-25)
+              </h3>
+              <span class="testimonial-author">Oracle</span>
+            </div>
+
             <div class="swiper-slide card">
               <div class="testimonial-icon">
                 <i class="ri-double-quotes-r"></i>
@@ -695,7 +803,7 @@
               <span class="testimonial-author">Meta - Coursera</span>
             </div>
 
-            <div class="swiper-slide card">
+            <!-- <div class="swiper-slide card">
               <div class="testimonial-icon">
                 <i class="ri-double-quotes-r"></i>
               </div>
@@ -724,7 +832,7 @@
               <br />
               <h3 class="testimonial-name">Android Development</h3>
               <span class="testimonial-author">Meta - Coursera</span>
-            </div>
+            </div> -->
           </div>
 
           <div class="swiper-pagination"></div>
@@ -851,7 +959,12 @@
     <div class="style-switcher-item">
       <h3 class="style-switcher-subtitle">Colors</h3>
       <div class="style-switcher-colors">
-        <span class="style-switcher-color active-color" style="--hue: 165">
+
+        <span class="style-switcher-color active-color" style="--hue: 15">
+          <i class="ri-check-fill"></i>
+        </span>
+
+        <span class="style-switcher-color" style="--hue: 165">
           <i class="ri-check-fill"></i>
         </span>
 
@@ -866,10 +979,7 @@
         <span class="style-switcher-color" style="--hue: 65">
           <i class="ri-check-fill"></i>
         </span>
-
-        <span class="style-switcher-color" style="--hue: 15">
-          <i class="ri-check-fill"></i>
-        </span>
+        
       </div>
     </div>
 
@@ -906,5 +1016,4 @@
   <!--=============== JS ===============-->
 </body>
 <script src="assets/js/main.js"></script>
-
 </html>
